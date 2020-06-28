@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="content">
+	    <h3>#CorrenteDoBemUnisEaD</h3>
+	    <h1>Que Tal Umas Dicas Filmes?</h1>
+	    <div class="row">  
+		    <div class="column column-50 column-offset-25">     		
+				<form method="POST">
+					<input type="text" placeholder="Comece Digitando um Filme Que gostou" name="filme_base">
+					<input class="button-primary" type="submit" value="Pesquisar">
+				</form>
+	       </div>   	
+	    </div>
+   </div>
+
+{% endblock %}

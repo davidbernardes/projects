@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="content">
+	    <h3>#CorrenteDoBemUnisEaD</h3>
+	    <h1>Só pra ter certeza. Qual destes é?</h1>
+	    <hr>
+	    <div class="row">  
+		    <div class="column column-50 column-offset-25">     		
+				<form method="POST">
+					{% for filme in filmes %}
+						<button class="button-primary" value="{{filme[0]}}" name="filme" type="submit">{{filme[1]}}</button>
+					{% endfor %}
+				</form>
+	       </div>   	
+	    </div>
+   </div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="content">
+	    <h3>#CorrenteDoBemUnisEaD</h3>
+	    <h1>Acredito Que Vá Gostar Destes</h1>
+	    <div>  
+		    <div class="column column-50 column-offset-25">     		
+				<table style="text-align: center;">
+				  <thead>
+				    <tr>
+				      <th>Título</th>
+				      <th>Generos</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				  	{% for dica in dicas%}
+					    <tr>
+					      <td>{{dica[0]}}</td>
+					      <td>{{dica[1]}}</td>
+					    </tr>
+					{% endfor %}
+				  </tbody>
+				</table>
+	       </div>   	
+	    </div>
+	    <a class="button" href="/" >Voltar</a>
+   </div>
+
+{% endblock %}
